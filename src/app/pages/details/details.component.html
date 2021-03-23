@@ -1,0 +1,30 @@
+<div class="container">
+    <br>
+        <h2 style="padding-bottom: 0px;">{{title}}</h2>
+        <div class="row">
+            <div style="text-align: center;" class="col-12">
+                <img style="width: 70%;" [src]="imagePort">
+            </div>
+        </div>
+        <br>
+        
+        <div class="row">
+            <div class="col-12">
+                <app-description [source]="poster" [resume]="resume"></app-description>
+            </div>
+        </div>
+       
+        <br>
+        <h2>Reparto</h2>
+        <br>
+        <div class="scrolling-horizontal">
+            <div  *ngFor="let elemento of list; let i = index" class="col-3">
+              
+                <app-image-cap [source]="elemento[0]" [titleMovie]="elemento[1]"></app-image-cap>
+            </div>
+        </div>
+       <br>
+        
+      
+
+    </div>

@@ -1,0 +1,10 @@
+.col-3
+{
+    display: inline-table;
+}
+.scrolling
+{
+    justify-content: space-around;
+    overflow:scroll; 
+    height:400px;
+}

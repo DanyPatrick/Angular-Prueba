@@ -1,0 +1,13 @@
+<div style="text-align: -webkit-center;" class="container">
+  <div style="width: 75%;" class="row">
+    <div  class="col-md-12 py-3">
+      <ngb-carousel  >
+        <ng-template ngbSlide *ngFor="let event of list">
+          <img [src]="event" alt="Random slide">
+          <div class="carousel-caption">
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div>
+</div>

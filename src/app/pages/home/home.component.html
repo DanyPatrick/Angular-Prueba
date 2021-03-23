@@ -1,0 +1,21 @@
+<div class="container">
+<br>
+    <h2 style="padding-bottom: 0px;">Peliculas en estreno</h2>
+    <div class="row"  >
+        <div class="col-12">
+
+        <app-carousel style="width: 70%;" [list]="list"></app-carousel>
+        </div>
+    </div>
+<br>
+    <h2>Peliculas más populares</h2>
+    <div  class="row scrolling" >
+        
+        <div *ngFor="let elemento of arreglo1; let i = index" class="col-3">
+            
+        <app-image-cap (click)="view(i)"  [source]="elemento[0]" [titleMovie]="elemento[1]" ></app-image-cap>
+        </div>
+    </div>
+
+
+</div>
